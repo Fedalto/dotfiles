@@ -1,0 +1,23 @@
+[user]
+  name = Leonardo Fedalto
+  email = lfedalto@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[gui]
+  spellingdictionary = none
+[core]
+  editor = emacs -nw -Q
+[alias]
+  lol = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short
+  s = status
+  d = diff
+  fall = fetch --all
+  co = checkout
+  ci = commit
+  l = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
+  lall = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
+[gist]
+  private = yes
+
