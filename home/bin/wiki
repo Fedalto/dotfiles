@@ -1,0 +1,4 @@
+#!/bin/bash
+# Query a short text from Wikipedia.
+
+dig +short txt $1.wp.dg.cx
