@@ -24,8 +24,24 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vcs-prompt env history key-bindings named-directories ls rsync\
-         jira git bundler ruby rvm python emacs)
+plugins=(
+  gnu-coreutils       \
+  vcs-prompt          \
+  env                 \
+  history             \
+  key-bindings        \
+  named-directories   \
+  rsync               \
+  ls                  \
+  brew                \
+  jira                \
+  git                 \
+  bundler             \
+  ruby                \
+  rvm                 \
+  python              \
+  emacs
+)
 
 source $ZSH/oh-my-zsh.sh
 
