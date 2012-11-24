@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Pretty-print JSON
+if [ $# -gt 0 ]; then
+  cat "$1" | python -m json.tool
+else
+  python -m json.tool </dev/stdin
+fi
