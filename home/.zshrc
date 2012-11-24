@@ -36,9 +36,10 @@ plugins=(
   brew                \
   jira                \
   git                 \
-  bundler             \
   ruby                \
-  rvm                 \
+  gem                 \
+  bundler             \
+  rbenv               \
   python              \
   emacs
 )
