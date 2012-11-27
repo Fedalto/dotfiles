@@ -1,23 +1,25 @@
 [user]
-  name = Leonardo Fedalto
+  name  = Leonardo Fedalto
   email = lfedalto@gmail.com
 [color]
-  diff = auto
+  diff   = auto
   status = auto
   branch = auto
+  ui     = true
 [gui]
   spellingdictionary = none
 [core]
   editor = emacs -nw -Q
 [alias]
-  lol = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short
-  s = status
-  d = diff
-  fall = fetch --all
-  co = checkout
-  ci = commit
-  l = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
-  lall = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
+  l       = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
+  lall    = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
+  lol     = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short
+  filelog = log -u
+  s       = status
+  d       = diff
+  dc      = diff --cached
+  fall    = fetch --all
+  co      = checkout
+  ci      = commit
 [gist]
   private = yes
-
