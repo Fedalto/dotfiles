@@ -40,13 +40,18 @@ plugins=(
   gem                 \
   bundler             \
   rbenv               \
+  vagrant             \
   python              \
   emacs
 )
 
 source $ZSH/oh-my-zsh.sh
-
 # Customize to your needs...
 
 umask 027
 
+
+### Added by the Heroku Toolbelt
+if [[ -d /usr/local/heroku/bin ]]; then
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
