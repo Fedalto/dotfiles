@@ -27,7 +27,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   gnu-coreutils       \
-  vcs-prompt          \
   env                 \
   history             \
   key-bindings        \
