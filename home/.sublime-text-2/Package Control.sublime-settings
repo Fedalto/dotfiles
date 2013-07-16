@@ -1,0 +1,16 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"Git",
+		"Markdown Preview",
+		"NaturalDocs",
+		"Package Control",
+		"RSpec",
+		"SublimeLinter",
+		"SublimeREPL",
+		"SublimeRope",
+		"Vagrant"
+	]
+}
