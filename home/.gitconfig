@@ -8,8 +8,6 @@
   ui     = true
 [gui]
   spellingdictionary = none
-[core]
-  editor = emacs -nw -Q
 [alias]
   l       = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
   lall    = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
@@ -23,3 +21,5 @@
   ci      = commit
 [gist]
   private = yes
+[push]
+	default = simple
