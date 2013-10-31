@@ -8,9 +8,9 @@
 		"NaturalDocs",
 		"Package Control",
 		"RSpec",
+		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeREPL",
-		"SublimeRope",
-		"Vagrant"
+		"SublimeRope"
 	]
 }
