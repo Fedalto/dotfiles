@@ -23,3 +23,5 @@
   private = yes
 [push]
 	default = simple
+[core]
+	excludesfile = /home/fedalto/.gitignore_global
