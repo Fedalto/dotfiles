@@ -43,6 +43,7 @@ plugins=(
   vagrant             \
   python              \
   emacs               \
+  docker              \
   zsh-syntax-highlighting
 )
 
