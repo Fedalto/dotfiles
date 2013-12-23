@@ -81,3 +81,12 @@ let g:pymode_lint_select = ""
 let g:pymode_folding = 0
 
 set wildignore+=*.o,*.pyc
+
+" Taglist setup
+map <F3> :TlistToggle<CR>
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Show_One_File = 1
+let Tlist_Inc_Winwidth = 0
+let Tlist_Enable_Fold_Column = 0
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Show_Menu = 0
