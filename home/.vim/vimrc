@@ -60,7 +60,23 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-set incsearch
+set showcmd   " Show incomplete cmds down the bottom
+set incsearch " Find the next match as we type the search
+set hlsearch  " Hilight searches by default
+set magic " Set magic on, for regular expressions
+set wildmode=longest,full " Complete longest common string, then each full match
+set wildmenu
+set ignorecase
+set smartcase
+set history=1000
+set cursorline
+set ff=unix
+set encoding=utf-8
+set fileencoding=utf-8
+set autoread
+set backspace=indent,eol,start
+syntax on
+
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
