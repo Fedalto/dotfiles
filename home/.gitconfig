@@ -9,19 +9,21 @@
 [gui]
   spellingdictionary = none
 [alias]
-  l       = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
-  lall    = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short --all
-  lol     = log --pretty=format:\"%C(yellow)%h %C(magenta)%ad %Creset| %s%C(red)%d %C(cyan)[%an]\" --graph --date=short
-  filelog = log -u
+  l       = log --pretty=format:'%C(yellow)%h %C(magenta)%cr %Creset|%C(red)%d%Creset %s %C(cyan)[%an]' --graph --date=short
+  r       = !git l -30
+  la      = !git l --all
+  ra      = !git r --all
+  ar      = !git r --all
   s       = status
   d       = diff
   dc      = diff --cached
-  fall    = fetch --all
+  fall    = fetch --all -p
   co      = checkout
   ci      = commit
+  daily   = !git l --no-merges --author=Fedalto --since yesterday
 [gist]
   private = yes
 [push]
-	default = simple
+  default = simple
 [core]
-	excludesfile = /home/fedalto/.gitignore_global
+  excludesfile = /home/fedalto/.gitignore_global
