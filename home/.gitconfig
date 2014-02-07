@@ -24,6 +24,6 @@
 [gist]
   private = yes
 [push]
-  default = simple
+  default = upstream
 [core]
   excludesfile = /home/fedalto/.gitignore_global
