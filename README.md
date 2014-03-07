@@ -8,6 +8,8 @@ So, ensure you have ruby and homesick already installed.
     $ homesick clone Fedalto/dotfiles
 
     $ homesick symlink Fedalto/dotfiles
+
+    $ homesick rc Fedalto/dotfiles
 ```
 
 The zsh theme needs a Powerline font that can be found here: https://github.com/Lokaltog/powerline-fonts
