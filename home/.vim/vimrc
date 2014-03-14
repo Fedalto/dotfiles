@@ -20,6 +20,8 @@ Bundle 'bling/vim-airline'
 " Fugitive is a Git plugin
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'airblade/vim-gitgutter'
+
 Bundle 'scrooloose/nerdtree'
 
 " Lint, codecompletion, documentation lookup, jump to classes, refactoring
@@ -67,7 +69,6 @@ set wildmenu
 set ignorecase
 set smartcase
 set history=1000
-set cursorline
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
@@ -127,3 +128,6 @@ let pymode_doc = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme= "powerlineish"
+
+" git gutter
+highlight clear SignColumn
