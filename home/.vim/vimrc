@@ -12,8 +12,10 @@ Bundle 'gmarik/vundle'
 "
 " original repos on GitHub
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Bundle 'Lokaltog/vim-easymotion'
+
+" Status line and buffer explorer
+Bundle 'bling/vim-airline'
 
 " Fugitive is a Git plugin
 Bundle 'tpope/vim-fugitive'
@@ -23,9 +25,6 @@ Bundle 'scrooloose/nerdtree'
 " Lint, codecompletion, documentation lookup, jump to classes, refactoring
 " tools, etc...
 Bundle 'klen/python-mode'
-
-" buffer explorer
-Bundle 'fholgado/minibufexpl.vim'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Bundle 'kien/ctrlp.vim'
@@ -59,12 +58,6 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle commands are not allowed.
 
 
-" Map Ctrl+<movement> to move around windows.
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-
 set showcmd   " Show incomplete cmds down the bottom
 set incsearch " Find the next match as we type the search
 set hlsearch  " Hilight searches by default
@@ -80,11 +73,28 @@ set encoding=utf-8
 set fileencoding=utf-8
 set autoread
 set backspace=indent,eol,start
+set hidden	" Switch buffers even if the current one have unsaved changes
 syntax on
 
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+
+" Map Ctrl+<movement> to move around windows.
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+" Map <leader>+<movement> to move around buffers
+nnoremap <Leader><Left> :bp<CR>
+nnoremap <Leader>h :bp<CR>
+nnoremap <Leader><Right> :bn<CR>
+nnoremap <Leader>l :bn<CR>
+
+nnoremap <Leader>w :bd<CR>
+
 
 " Powerline setup
 set term=xterm-256color
@@ -112,3 +122,8 @@ let tagbar_sort = 0
 
 " Pymode
 let pymode_doc = 0
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme= "powerlineish"
