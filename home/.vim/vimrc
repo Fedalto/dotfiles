@@ -24,6 +24,8 @@ Bundle 'airblade/vim-gitgutter'
 
 Bundle 'scrooloose/nerdtree'
 
+Bundle 'terryma/vim-multiple-cursors'
+
 " Lint, codecompletion, documentation lookup, jump to classes, refactoring
 " tools, etc...
 Bundle 'klen/python-mode'
