@@ -39,6 +39,7 @@ Bundle 'majutsushi/tagbar'
 " filetype.
 Bundle 'ddollar/nerdcommenter'
 
+
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -79,6 +80,9 @@ set backspace=indent,eol,start
 set hidden	" Switch buffers even if the current one have unsaved changes
 syntax on
 
+" Set <Tab> to 2 spaces everywhere, but for Python files.
+autocmd FileType * set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
