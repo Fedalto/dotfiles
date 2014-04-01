@@ -27,3 +27,4 @@
   default = upstream
 [core]
   excludesfile = /home/fedalto/.gitignore_global
+  editor = vim
