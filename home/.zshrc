@@ -44,6 +44,7 @@ plugins=(
   python              \
   emacs               \
   docker              \
+  ssh-agent           \
   zsh-syntax-highlighting
 )
 
