@@ -39,6 +39,9 @@ Bundle 'majutsushi/tagbar'
 " NERDCommenter allows you to wrangle your code comments, regardless of filetype.
 Bundle 'ddollar/nerdcommenter'
 
+" Select text at the same indent level.
+Bundle 'michaeljsmith/vim-indent-object'
+
 
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
