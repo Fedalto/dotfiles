@@ -83,6 +83,10 @@ set backspace=indent,eol,start
 set hidden	" Switch buffers even if the current one have unsaved changes
 syntax on
 
+" Auto save files when focus is lost
+au FocusLost * silent! wa
+set autowriteall
+
 " Set <Tab> to 2 spaces everywhere, but for Python files.
 autocmd FileType * set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
