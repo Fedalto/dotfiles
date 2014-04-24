@@ -21,6 +21,7 @@
   co      = checkout
   ci      = commit
   daily   = !git l --no-merges --author=Fedalto --since yesterday
+  sh      = show HEAD
 [gist]
   private = yes
 [push]
