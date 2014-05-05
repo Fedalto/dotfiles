@@ -124,6 +124,10 @@ let NERDTreeIgnore=['\~$', '\.pyc$']
 
 set wildignore+=*.o,*.pyc
 
+" NERDCommenter
+" For some reason, Vim sees Ctrl+/ as Ctrl+_
+map <C-_> <plug>NERDCommenterToggle
+
 " Tagbar setup
 map <silent> <F3> :TagbarToggle<CR>
 let tagbar_left = 1
