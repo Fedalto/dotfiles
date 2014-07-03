@@ -20,6 +20,9 @@ Bundle 'bling/vim-airline'
 " Fugitive is a Git plugin
 Bundle 'tpope/vim-fugitive'
 
+" Dispatch tasks asynchronous
+Bundle 'tpope/vim-dispatch'
+
 Bundle 'airblade/vim-gitgutter'
 
 Bundle 'scrooloose/nerdtree'
