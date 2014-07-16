@@ -94,6 +94,10 @@ set autowriteall
 autocmd FileType * set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
+" in makefiles, don't expand tabs to spaces, since actual tab characters are
+" needed, and have indentation at 4 chars
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=4
+
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
