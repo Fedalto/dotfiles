@@ -22,6 +22,7 @@
   ci      = commit
   daily   = !git l --no-merges --author=Fedalto --since yesterday
   sh      = show HEAD
+  ff      = !git merge --ff-only $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
 [gist]
   private = yes
 [push]
