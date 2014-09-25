@@ -4,12 +4,15 @@
 	[
 		"Alignment",
 		"ApplySyntax",
+		"Gist",
 		"Git",
+		"Jedi - Python autocompletion",
 		"Markdown Preview",
 		"NaturalDocs",
 		"Package Control",
 		"RSpec",
 		"SideBarEnhancements",
+		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeREPL",
 		"SublimeRope"
