@@ -15,13 +15,13 @@
   ra      = !git r --all
   ar      = !git r --all
   s       = status
+  sh      = show
   d       = diff
   dc      = diff --cached
   fall    = fetch --all -p
   co      = checkout
   ci      = commit
   daily   = !git l --no-merges --author=Fedalto --since yesterday
-  sh      = show HEAD
   ff      = !git merge --ff-only $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
 [gist]
   private = yes
@@ -30,3 +30,5 @@
 [core]
   excludesfile = /home/fedalto/.gitignore_global
   editor = vim
+[diff "po"]
+  textconv=strip_po_comments.sh
