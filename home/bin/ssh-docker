@@ -3,4 +3,4 @@
 # Usage:
 # ssh-docker <Docker ID|Name>
 
-ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $(docker inspect -f "{{ .NetworkSettings.IPAddress }}" "$1")
+ssh -A -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $(docker inspect -f "{{ .NetworkSettings.IPAddress }}" "$1")
