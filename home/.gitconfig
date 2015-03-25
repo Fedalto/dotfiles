@@ -26,8 +26,6 @@
   daily   = !git l --no-merges --author=Fedalto --since yesterday
   ff      = !git merge --ff-only $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
   bclean  = !git branch --merged | grep -vE '(master|develop)' | xargs -rp git branch -d
-[gist]
-  private = yes
 [push]
   default = upstream
 [core]
