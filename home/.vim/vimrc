@@ -1,61 +1,58 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" My bundles here:
-"
-" original repos on GitHub
-
-" Bundle 'Lokaltog/vim-easymotion'
 
 " Status line and buffer explorer
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " Fugitive is a Git plugin
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Dispatch tasks asynchronous
-Bundle 'tpope/vim-dispatch'
+Plugin 'tpope/vim-dispatch'
 
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Lint, codecompletion, documentation lookup, jump to classes, refactoring
 " tools, etc...
-Bundle 'davidhalter/jedi-vim'
-Bundle 'scrooloose/syntastic'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 
 " NERDCommenter allows you to wrangle your code comments, regardless of filetype.
-Bundle 'ddollar/nerdcommenter'
+Plugin 'ddollar/nerdcommenter'
 
 " Select text at the same indent level.
-Bundle 'michaeljsmith/vim-indent-object'
+Plugin 'michaeljsmith/vim-indent-object'
 
 
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Bundle 'tpope/vim-rails.git'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'tpope/vim-rails.git'
 " vim-scripts repos
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+" Plugin 'L9'
+" Plugin 'FuzzyFinder'
 " non-GitHub repos
-" Bundle 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " Git repos on your local machine (i.e. when working on your own plugin)
-" Bundle 'file:///Users/gmarik/path/to/plugin'
+" Plugin 'file:///Users/gmarik/path/to/plugin'
 " ...
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 
 filetype plugin indent on     " required!
 "
@@ -128,7 +125,7 @@ set laststatus=2
 " NERD Tree setup
 " F2 to toggle the tree view
 map <F2> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\~$', '\.pyc$']
+let NERDTreeIgnore=['\~$', '\.pyc$', '^__pycache__$']
 
 set wildignore+=*.o,*.pyc
 
@@ -153,3 +150,6 @@ highlight clear SignColumn
 
 " Syntatic
 let g:syntastic_python_pylint_post_args='--disable C0301,C0111,C0103,F0401,I0011,R0201,R0801,R0902,R0903,R0904,R0913,R0914,E1002,E1101,E0611,W0142,W0212,W0232,W0401,unused-argument'
+
+" CtrlP
+let g:ctrlp_extensions = ['tag', 'undo', 'line', 'changes', 'mixed']

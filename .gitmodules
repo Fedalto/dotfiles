@@ -1,9 +1,9 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = git://github.com/Fedalto/oh-my-zsh.git
-[submodule "home/.vim/bundle/vundle"]
-	path = home/.vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
 [submodule "home/.z"]
 	path = home/.z
 	url = https://github.com/rupa/z.git
+[submodule "home/.vim/bundle/Vundle.vim"]
+	path = home/.vim/bundle/Vundle.vim
+	url = git@github.com:gmarik/Vundle.vim.git
