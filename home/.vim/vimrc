@@ -39,6 +39,9 @@ Plugin 'ddollar/nerdcommenter'
 " Select text at the same indent level.
 Plugin 'michaeljsmith/vim-indent-object'
 
+" Syntax highlighting for Dockerfiles
+Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
+
 
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'tpope/vim-rails.git'
