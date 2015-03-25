@@ -29,7 +29,7 @@
 [push]
   default = upstream
 [core]
-  excludesfile = /home/fedalto/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = vim
 [diff "po"]
   textconv=strip_po_comments.sh
