@@ -26,6 +26,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+  command-not-found   \
   gnu-coreutils       \
   env                 \
   history             \
@@ -45,6 +46,7 @@ plugins=(
   emacs               \
   docker              \
   ssh-agent           \
+  tmuxinator          \
   zsh-syntax-highlighting
 )
 
