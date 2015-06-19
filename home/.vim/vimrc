@@ -33,11 +33,19 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'majutsushi/tagbar'
 
+" Snippets Engine
+Plugin 'SirVer/ultisnips'
+" Snippets collection.
+Plugin 'honza/vim-snippets'
+
 " NERDCommenter allows you to wrangle your code comments, regardless of filetype.
 Plugin 'ddollar/nerdcommenter'
 
 " Select text at the same indent level.
 Plugin 'michaeljsmith/vim-indent-object'
+
+" Sort python imports using isort
+Plugin 'fisadev/vim-isort'
 
 " Syntax highlighting for Dockerfiles
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
@@ -156,3 +164,8 @@ let g:syntastic_python_pylint_post_args='--disable C0301,C0111,C0103,F0401,I0011
 
 " CtrlP
 let g:ctrlp_extensions = ['tag', 'undo', 'line', 'changes', 'mixed']
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
