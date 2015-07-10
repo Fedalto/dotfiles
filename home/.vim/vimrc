@@ -99,6 +99,9 @@ syntax on
 au FocusLost * silent! wa
 set autowriteall
 
+" Set a POSIX shell
+set shell=bash
+
 " Set <Tab> to 2 spaces everywhere, but for Python files.
 autocmd FileType * set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
