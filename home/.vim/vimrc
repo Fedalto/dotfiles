@@ -51,6 +51,8 @@ Plugin 'fisadev/vim-isort'
 " Syntax highlighting for Dockerfiles
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 
+" Golang
+Plugin 'fatih/vim-go'
 
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'tpope/vim-rails.git'
