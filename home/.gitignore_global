@@ -1,4 +1,4 @@
 .vagrant
 *.sublime-project
 *.sublime-workspace
-
+.DS_Store
