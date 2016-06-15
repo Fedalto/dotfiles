@@ -121,6 +121,14 @@ autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=4
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Enable spell checking on Markdown file and git commit messages
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+"Also, enable word completion based on dictionary
+set complete+=kspell
+
+" Edit crontab in-place
+autocmd BufEnter /private/tmp/crontab.* setlocal backupcopy=yes
 
 " Map Ctrl+<movement> to move around windows.
 map <c-j> <c-w>j
@@ -178,6 +186,9 @@ let g:syntastic_python_pylint_post_args='--disable C0301,C0111,C0103,F0401,I0011
 let g:syntastic_python_flake8_post_args='--max-line-length=120'
 
 " CtrlP
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](node_modules|bower_components)$',
+    \ }
 let g:ctrlp_extensions = ['tag', 'undo', 'line', 'changes', 'mixed']
 
 " UltiSnips
