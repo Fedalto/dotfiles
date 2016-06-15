@@ -10,7 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'janko-m/vim-test'
 
 " Status line and buffer explorer
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Fugitive is a Git plugin
 Plugin 'tpope/vim-fugitive'
@@ -34,10 +35,14 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'majutsushi/tagbar'
 
+Plugin 'mileszs/ack.vim'
+
 " Snippets Engine
 Plugin 'SirVer/ultisnips'
 " Snippets collection.
 Plugin 'honza/vim-snippets'
+
+Plugin 'tpope/vim-surround'
 
 " NERDCommenter allows you to wrangle your code comments, regardless of filetype.
 Plugin 'ddollar/nerdcommenter'
