@@ -27,7 +27,7 @@ Plugin 'terryma/vim-multiple-cursors'
 
 " Lint, codecompletion, documentation lookup, jump to classes, refactoring
 " tools, etc...
-Plugin 'davidhalter/jedi-vim'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
@@ -94,7 +94,7 @@ set wildmenu
 set ignorecase
 set smartcase
 set history=1000
-set ff=unix
+set fileformat=unix
 set encoding=utf-8
 set fileencoding=utf-8
 set autoread  " Automatically reread files that have been changed externally
@@ -177,6 +177,12 @@ let g:airline_theme= "powerlineish"
 
 " git gutter
 highlight clear SignColumn
+
+" YouCompleteMe
+let g:ycm_python_binary_path = 'python'  " Find the python in PATH (works in virtualenv)
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_key_detailed_diagnostics = ''  " Do not create a key mapping for this
+map <C-]> :YcmCompleter GoTo<CR>
 
 " Syntatic
 let g:syntastic_check_on_open = 1
