@@ -112,7 +112,7 @@ set shell=bash
 
 " Set <Tab> to 2 spaces everywhere, but for Python files.
 autocmd FileType * set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent
 
 " in makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 4 chars
@@ -198,6 +198,6 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_extensions = ['tag', 'undo', 'line', 'changes', 'mixed']
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
