@@ -10,7 +10,7 @@
   spellingdictionary = none
 [alias]
   l       = log --pretty=format:'%C(yellow)%h %C(magenta)%cr %Creset|%C(red)%d%Creset %s %C(cyan)[%an]' --graph --date=short
-  r       = !git l -20
+  r       = !git l -10
   la      = !git l --all
   ra      = !git r --all
   ar      = !git r --all
@@ -29,7 +29,7 @@
 [pull]
   rebase = true
 [push]
-  default = upstream
+  default = current
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
