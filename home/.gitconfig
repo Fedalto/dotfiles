@@ -25,7 +25,8 @@
   news    = !git l ORIG_HEAD..
   daily   = !git l --no-merges --author=Fedalto --since yesterday
   ff      = !git merge --ff-only $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
-  bclean  = !git branch --merged | grep -vE '(master|develop)' | xargs -rp git branch -d
+  bclean  = !git branch --merged | grep -vE '(master|develop|prod|uat)' | xargs -rp git branch -d
+  amend   = commit --amend -C HEAD
 [pull]
   rebase = true
 [push]
