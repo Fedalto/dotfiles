@@ -28,6 +28,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   command-not-found   \
   gnu-coreutils       \
+  direnv              \
   env                 \
   history             \
   key-bindings        \
@@ -37,12 +38,12 @@ plugins=(
   brew                \
   jira                \
   git                 \
-  ruby                \
   gem                 \
   bundler             \
   rbenv               \
   vagrant             \
   python              \
+  pyenv               \
   emacs               \
   docker              \
   ssh-agent           \
