@@ -63,6 +63,9 @@ Plugin 'fatih/vim-go'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 
+" Lilypond
+Plugin 'gisraptor/vim-lilypond-integrator'
+
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'tpope/vim-rails.git'
 " vim-scripts repos
@@ -121,6 +124,9 @@ autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoi
 " in makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 4 chars
 autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=4
+
+" Edit crontab in-place. Don't change the inode
+autocmd FileType crontab setlocal bkc=yes
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
