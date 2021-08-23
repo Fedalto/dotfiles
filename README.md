@@ -1,15 +1,13 @@
-My dotfiles
-===========
+# My dotfiles
 
-This repo is designed to be used as a [homesick castle](https://github.com/technicalpickles/homesick).
-So, ensure you have ruby and homesick already installed.
+## Installation
 
-```shell
-    $ homesick clone Fedalto/dotfiles
+Requires [`stow`](https://www.gnu.org/software/stow/) and [Powerline fonts](https://github.com/powerline/fonts)
 
-    $ homesick symlink Fedalto/dotfiles
+```sh
+# To install everything
+./install.sh
 
-    $ homesick rc Fedalto/dotfiles
+# Or to configure only a few apps:
+stow --target ~ tmux
 ```
-
-The zsh theme needs a Powerline font that can be found here: https://github.com/Lokaltog/powerline-fonts
