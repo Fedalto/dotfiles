@@ -1,1 +1,12 @@
-*
+fish_variables
+
+# Ignore plugins files
+*/_*.fish
+functions/fisher.fish
+functions/fzf_configure_bindings.fish
+conf.d/pisces.fish
+conf.d/fzf.fish
+conf.d/z.fish
+completions/fisher.fish
+completions/fzf_configure_bindings.fish
+
