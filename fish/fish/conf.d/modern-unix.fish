@@ -36,11 +36,11 @@ if command --query duf
 end
 
 # tree -> broot
-if command --query broot
-    function tree --wraps=broot
-        broot $argv
-    end
-end
+#if command --query broot
+#    function tree --wraps=broot
+#        broot $argv
+#    end
+#end
 
 # dig -> dog
 if command --query dog
