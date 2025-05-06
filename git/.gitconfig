@@ -16,24 +16,28 @@
   ar      = !git r --all
   s       = status
   sh      = show
+  sw      = switch
   d       = diff
   dc      = diff --cached
-  fall    = fetch --all -p
+  fall    = fetch --all --prune
+  fomo    = fetch --all --prune
+  sw      = switch
   co      = checkout
   ci      = commit
   undo    = reset --hard
   news    = !git l ORIG_HEAD..
   daily   = !git l --no-merges --author=Fedalto --since yesterday
   ff      = !git merge --ff-only $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
-  bclean  = !git branch --merged | grep -vE '(master|develop|prod|uat)' | xargs -rp git branch -d
+  bclean  = !git branch --merged | grep -vE '(main|master|develop|prod|uat)' | xargs -rp git branch -d
   amend   = commit --amend -C HEAD
+  yolo    = push --force-with-lease
 [pull]
   rebase = true
 [push]
   default = current
+  autoSetupRemote = true
 [core]
   excludesfile = ~/.gitignore_global
-  editor = vim
   pager = diff-so-fancy | $PAGER
 [diff "po"]
   textconv=strip_po_comments.sh
