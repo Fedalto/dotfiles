@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -euo pipefail
+
+llm --system "Your output is going to be printed in a terminal window. Be brief" "$*" | bat --style=plain --paging=never --language=markdown
